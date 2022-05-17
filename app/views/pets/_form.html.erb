@@ -1,0 +1,7 @@
+<%= simple_form_for(@pet) do |f| %>
+ <%= f.input :name %>
+ <%= f.input :location %>
+ <%= f.input :species %>
+ <%= f.input :date_found %>
+ <%= f.button :submit, class: "btn btn-primary" %>
+<% end %>

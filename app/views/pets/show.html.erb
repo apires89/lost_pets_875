@@ -1,0 +1,12 @@
+<h1>Show page for <%= @pet.name %></h1>
+<p>species:<%= @pet.species %></p>
+<p>location:<%= @pet.location %></p>
+<p>found on :<%= @pet.date_found %></p>
+
+<%= link_to "Edit", edit_pet_path(@pet) %>
+<%= link_to  pet_path(@pet), method: :delete, data: {confirm: "Are you sure?"} do %>
+<i class="fa-solid fa-trash"></i>
+<% end %>
+<%= link_to pets_path do %>
+<i class="fa-solid fa-rotate-left"></i>
+<% end %>
